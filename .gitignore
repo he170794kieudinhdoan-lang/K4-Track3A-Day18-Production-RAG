@@ -3,6 +3,10 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+.ruff_cache/
 qdrant_data/
 *.egg-info/
 CODELAB.md
+.venv/
+venv/
+

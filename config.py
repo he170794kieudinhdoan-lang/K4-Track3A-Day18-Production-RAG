@@ -7,6 +7,8 @@ load_dotenv()
 
 # --- API Keys ---
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+if OPENAI_API_KEY.strip() in ("", "sk-...", "sk-"):
+    OPENAI_API_KEY = ""
 
 # --- Qdrant ---
 QDRANT_HOST = "localhost"
